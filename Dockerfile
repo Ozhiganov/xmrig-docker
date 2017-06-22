@@ -1,4 +1,6 @@
-FROM ubuntu
+FROM ubuntu:16.04
+MAINTAINER Evgeniy N. Ozhiganov <eozhiganov@ya.ru>
+
 RUN adduser -S -D -H -h /xmrig xminer
 RUN apk --no-cache upgrade && \
     apk --no-cache add \
